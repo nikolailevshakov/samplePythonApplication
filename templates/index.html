@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <title>sample python web application</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root">blahblah</div>
+    <h1>This is an index page of python web application, {{ name }}</h1>
+    <script type="text/babel">
+        function Header() {
+            return (
+                <header>
+                    <h1>Just another header</h1>
+                </header>
+            )
+        }
+        let catname = "Haki";
+        ReactDOM.render(
+            <Header />,
+            document.getElementById("root")
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#root {
+    background-color: #f67;
+    width: 300px;
+    height: 100px;
+}
+
+.cat img {
+    width: 500px;
+    height: 500px;
+}
